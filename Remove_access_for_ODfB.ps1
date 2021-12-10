@@ -13,8 +13,8 @@ $loadInfo1 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.ShareP
 $loadInfo2 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")
 $loadInfo3 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
 
-$creds = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($AdminAccount, $sstr)
-$UserCredential = New-Object System.Management.Automation.PSCredential -argumentlist $AdminAccount, $sstr
+$creds = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($AdminAccount, $AdminPass)
+$UserCredential = New-Object System.Management.Automation.PSCredential -argumentlist $AdminAccount, $AdminPass
 
 # Add the path of the User Profile Service to the SPO admin URL, then create a new webservice proxy to access it
 $proxyaddr = "$AdminURI/_vti_bin/UserProfileService.asmx?wsdl"
