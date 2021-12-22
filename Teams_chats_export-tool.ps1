@@ -5,8 +5,6 @@
 .DESCRIPTION
    PS script for export Teams chat messages.
 
-.VERSION
-    2.1
 #>
 
 Clear-Host
