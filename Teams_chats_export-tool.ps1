@@ -1,5 +1,4 @@
 ﻿<#
-
 .Synopsis
     Teams chat Export Tool
 
@@ -7,9 +6,10 @@
    PS script for export Teams chat messages.
 
 .VERSION
-    2,1
-
+    2.1
 #>
+
+Clear-Host
 
 Function Get-UnifiedExportTool {
     
@@ -59,8 +59,6 @@ Function Get-UnifiedExportTool {
         }
     }
 }
-
-Clear-Host
 
 Function Export-TeamsData ($user, $Cred) {
     
